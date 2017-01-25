@@ -1,0 +1,13 @@
+# also requires Node
+language: ruby
+rvm:
+  - 2.1.1
+before_install: npm install
+script: npm test
+cache:
+  - bundler
+  - npm
+branches:
+  only:
+    - /.*/
+sudo: false

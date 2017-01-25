@@ -1,0 +1,29 @@
+{
+  "name": "advanced_js",
+  "version": "0.0.0",
+  "description": "syllabus and materials for the Advanced JavaScript class at NYU",
+  "main": "scripts/build.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "scripts/cibuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/advanced-js/deck.git"
+  },
+  "keywords": [
+    "javascript",
+    "class",
+    "teach"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/advanced-js/deck/issues"
+  },
+  "devDependencies": {
+    "falafel": "^0.3.1"
+  }
+}

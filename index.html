@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1>Advanced JavaScript</h1>
+<ol>
+  {% for example in site.data.examples %}
+    <li>
+      <a href="examples/{{ example }}/">{{ example }}</a>
+    </li>
+  {% endfor %}
+</ol>

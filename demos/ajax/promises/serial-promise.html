@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>AJAX example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+      var promise1 = $.get('example.json');
+
+      var promiseAll = promise1.then(function(data) {
+        console.log('first fetched!');
+        var promise2 = $.get('example2.json?value=' + data.value);
+        return promise2;
+      });
+
+      promiseAll.then(function(){
+        console.log('both fetched!');
+      });
+    </script>
+  </head>
+  <body>
+    See console.
+  </body>
+</html>
